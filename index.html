@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<HTML>
+
+     <HEAD>
+          <meta charset="UTF-8" />
+          <meta charset="UTF-8">
+          </meta>
+          <meta name="viewport" content="width=device-width, initial-scale = 1" />
+          <!--Enter names below -->
+          <meta name="Author" content="Kacian Richards, Deanna Sawyers, etc" />
+          <meta name="Keywords" content="HTML5 Responsive Layout" />
+          <title> Game of Chance </title>
+          <!--Insert link to JavaScript-->
+          <script src="../groupProject/Javascript/myscript.js"></script>
+          <!--Insert link to CSS-->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+               crossorigin="anonymous" />
+          <link rel="stylesheet" type="text/css" href="../groupProject/CSS/Form.css" />
+     </HEAD>
+
+     <BODY>
+          <HEADER>
+               <H1>Application Form</H1>
+
+          </HEADER>
+          <SECTION>
+               <div id="container">
+                    <div id="registration" append() form>
+                         <!--Insert action for the form tag-->
+                         <FORM name="UserInformation" action="#">
+                              <fieldset>
+                                   <legend class="player">Player information</legend>
+                                   <!--Username-->
+                                   <label for="Fname">Enter your Username: </label><br />
+                                   <input type="text" id="firstname" size="40" maxlength="25" minlength="3"
+                                        placeholder="User name" />
+                                   <br />
+                                   <!--D.O.B-->
+                                   <label for="dob">Enter your Date of Birth: </label><br />
+                                   <input type="date" name="dob" id="DateofBirth" size="40" />
+                                   <br />
+                                   <!--Email address-->
+                                   <label for="email"> Enter your Gmail.com email address: </label><br />
+                                   <input type="text" id="Email" pattern=".+@gmail\.com" size="40"
+                                        placeholder="abcname@gmail.com" required />
+                                   <br />
+                                   <!--Age should be a calculation-->
+                                   <label for="age"> Your Age is:</label><br />
+                                   <input type="text" name="age" id="age" maxlength="2" minlength="2"
+                                        placeholder="Your Age" required /><br />
+                                   <!--Ahm...^^^-->
+                                   <p id="message"></p>
+                                   <!--gender-->
+                                   <label for="gender">Select your Gender</label><br />
+                                   <input type="radio" name="gender" id="gendF" value="f" />Female
+                                   <input type="radio" name="gender" id="gendM" value="m" />Male
+                                   <br /><br />
+                                   <!--Submit button-->
+                                   <button type="button" class="btn btn-lg btn-light" id="Register"
+                                        onclick="Storage()">Register</button>
+                                   <input type="reset" value="Reset" class="btn btn-lg btn-light" />
+                                   <button id="Play" class="btn btn-lg btn-light"
+                                        onclick="location.href='../groupProject/Html/gameindex.html'">Play</button>
+                                   <br />
+                              </fieldset>
+                         </FORM>
+                    </div>
+               </div>
+          </SECTION>
+          <FOOTER>
+               <hr />
+               <br />
+               <!--Insert names below-->
+               <h6>Copyright &copy; Kacian Richards, Deanna Sawyers, Romaine Adams </h6>
+          </FOOTER>
+          <script src="../groupProject/Javascript/Function1.js"></script>
+     </BODY>
+
+</HTML>
